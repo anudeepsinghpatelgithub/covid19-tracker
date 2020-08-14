@@ -1,0 +1,49 @@
+.infoBox {
+  flex: 1;
+  cursor: pointer;
+  border-radius: 15px !important;
+  box-shadow: 0 0 8px -4px rgba(0, 0, 0, 0.5);
+}
+
+.infoBox:not(:last-child) {
+  margin-right: 10px;
+}
+
+.infoBox--selected--warn {
+  border-top: 10px solid #ffcc00;
+}
+.infoBox--selected--green {
+  border-top: 10px solid greenyellow;
+}
+.infoBox--selected--red {
+  border-top: 10px solid red;
+}
+
+.infoBox__cases--green {
+  color: lightgreen !important;
+}
+.infoBox__cases--warn {
+  color: #ffcc00 !important;
+}
+.infoBox__cases--red {
+  color: red !important;
+}
+
+.infoBox__cases {
+  color: #cc1034;
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.infoBox__total {
+  color: #6c757d;
+  font-weight: 700 !important;
+  font-size: 0.8rem !important;
+  margin-top: 15px !important;
+}
+@media (max-width: 640px) {
+  .infoBox:last-child {
+    margin-right: 10px !important;
+  }
+}
